@@ -2,8 +2,7 @@ FROM        frolvlad/alpine-glibc
 
 MAINTAINER  Pterodactyl Software, <support@pterodactyl.io>
 
-RUN         apk add --update --no-cache curl ca-certificates openssl libstdc++ busybox-extras binutils jq \
-            && apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing libc++  \
+RUN         apk add --update --no-cache curl ca-certificates openssl libstdc++ busybox-extras binutils libc++ jq \
             && adduser -D -h /home/container container
 
 USER        container
