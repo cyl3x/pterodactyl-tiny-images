@@ -1,6 +1,6 @@
 FROM openjdk:8-jre-alpine
 
-MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
+LABEL author="cyl3x" maintainer="Pterodactyl Software, <support@pterodactyl.io>"
  
 RUN apk add --no-cache --update curl jq ca-certificates openssl git tar bash sqlite fontconfig tzdata iproute2 \
     && adduser --disabled-password --home /home/container container
