@@ -1,6 +1,6 @@
 FROM debian:8-slim
 
-MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
+LABEL author="cyl3x" maintainer="Pterodactyl Software, <support@pterodactyl.io>"
 
 RUN apt update \
     && apt upgrade -y \
