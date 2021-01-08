@@ -9,4 +9,4 @@ Avaiable are:
   add ```quay.io/cyl3x/pterodactyl-images:<tag>``` to your eggs or set it as custom docker image
 <br></br>
 Alternatively you can use the images from Docker Hub:    
-  add ```cyl3x/pterodactyl-images:<tag>``` to your eggs or set it as custom docker image
+  add ```cyl3x/pterodactyl-tiny-images:<tag>``` to your eggs or set it as custom docker image
