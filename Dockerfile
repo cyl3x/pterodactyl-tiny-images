@@ -3,7 +3,7 @@ FROM adoptopenjdk/openjdk8:alpine-slim
 
 MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
  
-RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite fontconfig tzdata iproute2 \
+RUN apk add --no-cache --update curl jq ca-certificates openssl git tar bash sqlite fontconfig tzdata iproute2 \
     && adduser --disabled-password --home /home/container container
  
 USER container
