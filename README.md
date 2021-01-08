@@ -1,6 +1,11 @@
-# Pterodactyl Java 11 Image
+# Pterodactyl Alpine Images
 
-Pterodactyl Java 11 base image based on Alpine  
+Pterodactyl base images based on Alpine  
+
+Avaiable are:  
+  - Java 8 &11
+  - Python 3
+
   add  
   ```quay.io/cyl3x/pterodactyl-images:<tag>```  
   to your eggs or set it as custom docker image  
