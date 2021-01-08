@@ -1,6 +1,6 @@
 FROM        node:8-alpine
 
-LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
+MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
 
 RUN         apk add --no-cache --update libc6-compat ffmpeg \
             && adduser -D -h /home/container container
