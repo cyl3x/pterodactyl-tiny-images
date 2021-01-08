@@ -1,5 +1,5 @@
 
-FROM openjdk:8-jre-alpine
+FROM python:3
 
 MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
 
