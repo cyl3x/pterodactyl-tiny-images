@@ -1,7 +1,6 @@
-
 FROM adoptopenjdk/openjdk8:alpine-slim
 
-MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
+LABEL author="cyl3x" maintainer="Pterodactyl Software, <support@pterodactyl.io>"
  
 RUN apk add --no-cache --update curl jq ca-certificates openssl git tar bash sqlite fontconfig tzdata iproute2 \
     && adduser --disabled-password --home /home/container container
@@ -9,11 +8,11 @@ RUN apk add --no-cache --update curl jq ca-certificates openssl git tar bash sql
 USER container
 ENV  USER=container HOME=/home/container
 
-USER        container
-ENV         USER=container HOME=/home/container
+USER container
+ENV USER=container HOME=/home/container
 
-WORKDIR     /home/container
+WORKDIR /home/container
 
-COPY        ./entrypoint.sh /entrypoint.sh
+COPY ./entrypoint.sh /entrypoint.sh
 
-CMD         ["/bin/bash", "/entrypoint.sh"]
+CMD ["/bin/bash", "/entrypoint.sh"]
