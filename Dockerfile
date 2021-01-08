@@ -1,5 +1,5 @@
 
-FROM python:3
+FROM python:3-alpine
 
 MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
 
