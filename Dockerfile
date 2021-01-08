@@ -1,10 +1,9 @@
 FROM adoptopenjdk/openjdk11:alpine-slim
 
 MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
-
-RUN apt-get update -y \
- && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
- && useradd -d /home/container -m container
+ 
+ RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite fontconfig tzdata iproute2 \
+    && adduser --disabled-password --home /home/container container
  
 USER container
 ENV  USER=container HOME=/home/container
