@@ -1,6 +1,6 @@
-# Pterodactyl Alpine Images
+# Pterodactyl Tiny Images
 
-Pterodactyl base images based on Alpine  
+Pterodactyl base images mostly based on Alpine  
 
 Avaiable are:  
   - Java 8 & 11
