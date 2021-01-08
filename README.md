@@ -1,1 +1,1 @@
-# Pterodactyl Java-jre 8 Image
+# Pterodactyl glibc Image
