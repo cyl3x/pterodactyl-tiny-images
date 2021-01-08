@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:alpine-slim
+FROM adoptopenjdk/openjdk14:alpine-slim
 
 MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
  
