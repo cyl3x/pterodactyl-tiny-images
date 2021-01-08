@@ -2,12 +2,12 @@
 
 Pterodactyl Java 11 base image based on Alpine  
   add  
-  ```quay.io/cyl3x/pterodactyl-images:java-11```  
+  ```quay.io/cyl3x/pterodactyl-images:<tag>```  
   to your eggs or set it as custom docker image  
 
 Alternatively you can use the images from Docker Hub:    
   add   
-  ```cyl3x/pterodactyl-images:java-11```  
+  ```cyl3x/pterodactyl-images:<tag>```  
   to your eggs or set it as custom docker image  
   
   
