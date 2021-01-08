@@ -1,1 +1,1 @@
-# Pterodactyl glibc Image
+# Pterodactyl nodejs-8 Image
