@@ -1,1 +1,1 @@
-# Pterodactyl Java 8 Image
+# Pterodactyl Java-jre 8 Image
