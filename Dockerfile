@@ -1,8 +1,8 @@
-FROM        frolvlad/alpine-glibc
+FROM        node:8-alpine
 
-MAINTAINER  Pterodactyl Software, <support@pterodactyl.io>
+LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
 
-RUN         apk add --update --no-cache curl ca-certificates openssl libstdc++ busybox-extras binutils libc-dev jq \
+RUN         apk add --no-cache --update libc6-compat ffmpeg \
             && adduser -D -h /home/container container
 
 USER        container
