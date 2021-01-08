@@ -1,7 +1,7 @@
 
-FROM python:3-alpine
+FROM        python:3-alpine
 
-MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
+LABEL       author="cyl3x" maintainer="Pterodactyl Software, <support@pterodactyl.io>"
 
 RUN         apk add --no-cache --update \
             && adduser -D -h /home/container container
