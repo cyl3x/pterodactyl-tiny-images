@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk11:alpine-slim
 
-MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
+LABEL author="cyl3x" maintainer="Pterodactyl Software, <support@pterodactyl.io>"
  
 RUN apk add --no-cache --update jq curl ca-certificates openssl git tar bash sqlite fontconfig tzdata iproute2 \
     && adduser --disabled-password --home /home/container container
