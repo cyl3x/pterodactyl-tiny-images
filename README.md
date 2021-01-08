@@ -14,4 +14,4 @@ Alternatively you can use the images from Docker Hub:
   
 Links:  
 https://hub.docker.com/r/cyl3x/pterodactyl-java-11  
-https://quay.io/repository/cyl3x/pterodactyl-images  
+https://quay.io/repository/cyl3x/pterodactyl-tiny-images  
