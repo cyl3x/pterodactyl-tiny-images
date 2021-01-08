@@ -1,4 +1,4 @@
-FROM        node:8-alpine
+FROM        node:14-alpine
 
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
 
