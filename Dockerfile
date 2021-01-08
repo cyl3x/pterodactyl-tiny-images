@@ -1,4 +1,3 @@
-
 FROM openjdk:8-jre-alpine
 
 MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
