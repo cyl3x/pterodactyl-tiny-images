@@ -1,9 +1,9 @@
 FROM        ubuntu:18.04
 
-MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
+LABEL       author="cyl3x" maintainer="Pterodactyl Software, <support@pterodactyl.io>"
 
 ENV         DEBIAN_FRONTEND noninteractive
-# Install Dependencies
+
 RUN         dpkg --add-architecture i386 \
             && apt-get update \
             && apt-get upgrade -y \
