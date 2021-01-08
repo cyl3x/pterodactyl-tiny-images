@@ -3,8 +3,11 @@
 Pterodactyl base images mostly based on Alpine to reduce the image size dramaticly
 
 Avaiable are:  
-  - Java 8 & 11
+  - Java 8 & 11-15
   - Python 3
+  - nodejs 8/10/12/14/15
+  - mono
+  - glibc
 <br></br>
   add ```quay.io/cyl3x/pterodactyl-images:<tag>``` to your eggs or set it as custom docker image
 <br></br>
