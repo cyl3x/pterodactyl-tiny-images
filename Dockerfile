@@ -1,6 +1,6 @@
 FROM        frolvlad/alpine-glibc
 
-MAINTAINER  Pterodactyl Software, <support@pterodactyl.io>
+LABEL author="cyl3x" maintainer="Pterodactyl Software, <support@pterodactyl.io>"
 
 RUN         apk add --update --no-cache curl ca-certificates openssl libstdc++ busybox-extras binutils libc-dev jq \
             && adduser -D -h /home/container container
