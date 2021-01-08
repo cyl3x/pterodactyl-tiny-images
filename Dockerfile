@@ -1,6 +1,6 @@
 FROM        frolvlad/alpine-mono
 
-MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
+LABEL       author="cyl3x" maintainer="Pterodactyl Software, <support@pterodactyl.io>"
 
 RUN         echo "http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
             && apk add --update --no-cache openssl curl sqlite libgdiplus \
