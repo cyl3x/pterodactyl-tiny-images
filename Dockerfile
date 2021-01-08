@@ -1,18 +1,14 @@
-FROM openjdk:8-jre-alpine
+FROM        frolvlad/alpine-glibc
 
-MAINTAINER Pterodactyl Software, <support@pterodactyl.io>
- 
-RUN apk add --no-cache --update curl jq ca-certificates openssl git tar bash sqlite fontconfig tzdata iproute2 \
-    && adduser --disabled-password --home /home/container container
- 
-USER container
-ENV  USER=container HOME=/home/container
+MAINTAINER  Pterodactyl Software, <support@pterodactyl.io>
+
+RUN         apk add --update --no-cache curl ca-certificates openssl libstdc++ busybox-extras binutils \
+            && apk add libc++ jq --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing \
+            && adduser -D -h /home/container container
 
 USER        container
 ENV         USER=container HOME=/home/container
-
 WORKDIR     /home/container
 
 COPY        ./entrypoint.sh /entrypoint.sh
-
-CMD         ["/bin/bash", "/entrypoint.sh"]
+CMD         ["/bin/ash", "/entrypoint.sh"]
